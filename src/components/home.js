@@ -15,11 +15,11 @@ function Home(){
 
     const render = (commit) => {
 
-        let commitName = commit['display_title'];
+        let commitName = commit["display_title"];
         let key = commit['id'];
-        if(commit['actor']['type'] === "User"){
+        if(commit["actor"]["type"] === "User"){
             return (
-                <tr key = { commit['id'] }>
+                <tr key = { commit["id"] }>
                     <td> { commitName } </td>
                     <td> <button id = {key} onClick = {revertCommit}>Revert</button> </td>
                 </tr> 
@@ -31,7 +31,7 @@ function Home(){
         console.log(event.target.id);
         let token = "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";
         const postMethod = {
-            method: 'POST',
+            method: "POST",
             headers: { 
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`,

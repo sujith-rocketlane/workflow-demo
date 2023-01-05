@@ -14,15 +14,33 @@ function Home(){
     }, [])
 
     const render = (commit) => {
+
         let commitName = commit['display_title'];
-        if(commit['actor']['type'] == "User"){
+        let key = commit['id'];
+        if(commit['actor']['type'] === "User"){
             return (
                 <tr key = { commit['id'] }>
                     <td> { commitName } </td>
-                    <td> <input type = "button" value = "Revert"/> </td>
+                    <td> <button id = {key} onClick = {revertCommit}>Revert</button> </td>
                 </tr> 
             );
         }
+    }
+
+    const revertCommit = (event) => {
+        console.log(event.target.id);
+        let token = "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";
+        const postMethod = {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`,
+             },
+            
+        };
+        fetch("https://api.github.com/repos/sujith-rocketlane/workflow-demo/actions/runs/" + event.target.id + "/rerun", postMethod)
+            .then(response => console.log(response))
+            .then(() => alert("Succesfull!"))
     }
     
     if(!loaded){
@@ -43,7 +61,7 @@ function Home(){
                     </tr>
                 </thead>
                 <tbody>
-                    { data.map(render) }
+                    { data['workflow_runs'].map(render) }
                 </tbody>
             </table>
         );

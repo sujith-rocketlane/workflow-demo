@@ -8,11 +8,23 @@ function Home(){
         .then((data) => data.json())
         .then((data) => {
             setData(data);
-            setLoaded(false);
+            setLoaded(true);
             console.log(data);
         })
     }, [])
 
+    const render = (commit) => {
+        let commitName = commit['display_title'];
+        if(commit['actor']['type'] == "User"){
+            return (
+                <tr key = { commit['id'] }>
+                    <td> { commitName } </td>
+                    <td> <input type = "button" value = "Revert"/> </td>
+                </tr> 
+            );
+        }
+    }
+    
     if(!loaded){
         return (
             <div className = 'loadMsg'>
@@ -23,9 +35,17 @@ function Home(){
     }
     else{
         return (
-            <div>
-                <h1> {data} </h1>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Commits </th>
+                        <th> Revert </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    { data.map(render) }
+                </tbody>
+            </table>
         );
     }
 

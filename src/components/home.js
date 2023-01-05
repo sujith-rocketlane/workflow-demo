@@ -23,17 +23,9 @@ function Home(){
     }
     else{
         return (
-            <table>
-                <thead>
-                    <tr>
-                        <th> Pull Requests </th>
-                        <th> Revert </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    { data.map(render) }
-                </tbody>
-            </table>
+            <div>
+                <h1> data to be printed </h1>
+            </div>
         );
     }
 

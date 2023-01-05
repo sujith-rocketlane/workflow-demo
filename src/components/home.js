@@ -24,7 +24,7 @@ function Home(){
     else{
         return (
             <div>
-                <h1> data to be printed </h1>
+                <h1> {data} </h1>
             </div>
         );
     }

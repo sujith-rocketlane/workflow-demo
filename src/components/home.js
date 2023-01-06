@@ -17,7 +17,7 @@ function Home(){
 
         let commitName = commit["display_title"];
         let key = commit['id'];
-        if(commit["actor"]["type"] === "User"){
+        if(commit["actor"]["type"] === "User" && commit["conclusion"] === "success"){
             return (
                 <tr key = { commit["id"] }>
                     <td> { commitName } </td>
@@ -29,7 +29,7 @@ function Home(){
 
     const revertCommit = (event) => {
         console.log(event.target.id);
-        let token = "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";
+        let token = "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";
         const postMethod = {
             method: "POST",
             headers: { 

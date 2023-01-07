@@ -23,12 +23,14 @@ function HomePage(){
                 <select id = "gender" name = "gender" value = {gender} onChange = {(e) => setGender(e.target.value)}>
                     <option value = "male" >Male</option>
                     <option value = "female" >Female</option>
+                    <option value = "others" >Others</option>
                 </select>
                 <label htmlFor = 'plan'>Membership plan</label>
                 <select id = "plan" name = "plan" value = {plan} onChange = {(e) => setPlan(e.target.value)}>
                     <option value = "$299">$299</option>
                     <option value = "$499">$499</option>
                     <option value = "$999">$999</option>
+                    <option value = "$1499">$1499</option>
                 </select>
             </form>
         </div>

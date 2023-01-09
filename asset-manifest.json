@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/workflow-demo/static/css/main.5a43837d.css",
-    "main.js": "/workflow-demo/static/js/main.46cfa5bb.js",
+    "main.css": "/workflow-demo/static/css/main.bb25c050.css",
+    "main.js": "/workflow-demo/static/js/main.251a01dc.js",
     "static/js/787.f7c1cec0.chunk.js": "/workflow-demo/static/js/787.f7c1cec0.chunk.js",
     "static/media/bg1.jpg": "/workflow-demo/static/media/bg1.4982ff8a3560a3672def.jpg",
     "index.html": "/workflow-demo/index.html",
-    "main.5a43837d.css.map": "/workflow-demo/static/css/main.5a43837d.css.map",
-    "main.46cfa5bb.js.map": "/workflow-demo/static/js/main.46cfa5bb.js.map",
+    "main.bb25c050.css.map": "/workflow-demo/static/css/main.bb25c050.css.map",
+    "main.251a01dc.js.map": "/workflow-demo/static/js/main.251a01dc.js.map",
     "787.f7c1cec0.chunk.js.map": "/workflow-demo/static/js/787.f7c1cec0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a43837d.css",
-    "static/js/main.46cfa5bb.js"
+    "static/css/main.bb25c050.css",
+    "static/js/main.251a01dc.js"
   ]
 }

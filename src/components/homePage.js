@@ -13,7 +13,7 @@ function HomePage(){
             <form action = "">
                 <label htmlFor = 'name'>name</label>
                 <input type = "text" value = { name } onChange = {(e) => setName(e.target.value)} placeholder = 'Enter your Name..'/>
-                <label htmlFor = 'age'>Age</label>
+                <label htmlFor = 'age'>age</label>
                 <input type = "text" value = { age } onChange = {(e) => setAge(e.target.value)} placeholder = 'Enter your Age..'/>
                 <label htmlFor = 'mail'>Mail</label>
                 <input type = "text" value = { mail } onChange = {(e) => setMail(e.target.value)} placeholder = 'Enter your Mail..'/>

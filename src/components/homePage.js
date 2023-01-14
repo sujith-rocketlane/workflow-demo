@@ -17,7 +17,7 @@ function HomePage(){
                 <input type = "text" value = { age } onChange = {(e) => setAge(e.target.value)} placeholder = 'Enter your Age..'/>
                 <label htmlFor = 'mail'>mail</label>
                 <input type = "text" value = { mail } onChange = {(e) => setMail(e.target.value)} placeholder = 'Enter your Mail..'/>
-                <label htmlFor = 'password' >Password</label>
+                <label htmlFor = 'password' >password</label>
                 <input type = "password" value = { password } onChange = {(e) => setPassword(e.target.value)} placeholder = 'Enter your password..'/>
                 <label htmlFor = 'gender'>Gender</label>
                 <select id = "gender" name = "gender" value = {gender} onChange = {(e) => setGender(e.target.value)}>

@@ -23,7 +23,6 @@ function HomePage(){
                 <select id = "gender" name = "gender" value = {gender} onChange = {(e) => setGender(e.target.value)}>
                     <option value = "male" >Male</option>
                     <option value = "female" >Female</option>
-                    <option value = "others" >Others</option>
                 </select>
                 <label htmlFor = 'plan'>membership planssssss</label>
                 <select id = "plan" name = "plan" value = {plan} onChange = {(e) => setPlan(e.target.value)}>

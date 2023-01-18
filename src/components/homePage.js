@@ -28,14 +28,6 @@ function HomePage(){
                 <label htmlFor = 'plan'>membership planssssss</label>
                 <select id = "plan" name = "plan" value = {plan} onChange = {(e) => setPlan(e.target.value)}>
                     <option value = "$299">$299</option>
-                    <option value = "$499">$499</option>
-                    <option value = "$999">$999</option>
-                    <option value = "$1499">$1499</option>
-                    <option value = "$1999">$1499</option>
-                    <option value = "$2499">$2499</option>
-                    <option value = "$2999">$2999</option>
-                    <option value = "$4999">$4999</option>
-                    <option value = "$5999">$5999</option>
                 </select>
             </form>
         </div>

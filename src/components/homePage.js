@@ -28,6 +28,7 @@ function HomePage(){
                 <select id = "plan" name = "plan" value = {plan} onChange = {(e) => setPlan(e.target.value)}>
                     <option value = "$299">$299</option>
                     <option value = "$499">$499</option>
+                    <option value = "$599">$599</option>
                 </select>
             </form>
         </div>

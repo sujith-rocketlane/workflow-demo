@@ -11,7 +11,7 @@ function HomePage(){
     return (
         <div class = "form">
             <form action = "">
-                <label htmlFor = 'name'>name</label>
+                <label htmlFor = 'name'>Name</label>
                 <input type = "text" value = { name } onChange = {(e) => setName(e.target.value)} placeholder = 'Enter your Name..'/>
                 <label htmlFor = 'age'>age</label>
                 <input type = "text" value = { age } onChange = {(e) => setAge(e.target.value)} placeholder = 'Enter your Age..'/>

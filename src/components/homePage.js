@@ -31,6 +31,7 @@ function HomePage(){
                     <option value = "$599">$599</option>
                     <option value = "$699">$699</option>
                     <option value = "$799">$799</option>
+                    <option value = "$899">$899</option>
                 </select>
             </form>
         </div>

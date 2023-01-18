@@ -11,15 +11,15 @@ function HomePage(){
     return (
         <div class = "form">
             <form action = "">
-                <label htmlFor = 'name'>name</label>
+                <label htmlFor = 'name'>Name</label>
                 <input type = "text" value = { name } onChange = {(e) => setName(e.target.value)} placeholder = 'Enter your Name..'/>
-                <label htmlFor = 'age'>age</label>
+                <label htmlFor = 'age'>Age</label>
                 <input type = "text" value = { age } onChange = {(e) => setAge(e.target.value)} placeholder = 'Enter your Age..'/>
-                <label htmlFor = 'mail'>mail</label>
+                <label htmlFor = 'mail'>Mail</label>
                 <input type = "text" value = { mail } onChange = {(e) => setMail(e.target.value)} placeholder = 'Enter your Mail..'/>
                 <label htmlFor = 'password' >password</label>
                 <input type = "password" value = { password } onChange = {(e) => setPassword(e.target.value)} placeholder = 'Enter your password..'/>
-                <label htmlFor = 'gender'>gender</label>
+                <label htmlFor = 'gender'>Gender</label>
                 <select id = "gender" name = "gender" value = {gender} onChange = {(e) => setGender(e.target.value)}>
                     <option value = "male" >Male</option>
                     <option value = "female" >Female</option>
